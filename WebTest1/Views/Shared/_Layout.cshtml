@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title -Xtreme Caffeine</title>
+        <link rel="SHORTCUT ICON" href="@Url.Content("~/Jommans-Cafe-Noon-Coffee-cup.ico")" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("Scripts", false)
+        <style type="text/css">
+
+            @RenderSection("Styles", false)
+        </style>
+    </head>
+    <body>
+        <div id="fb-root"></div>
+        <script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=761462080562204&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    @Html.ActionLink("Xtreme Caffeine", "Index", "Home", null, new { @class = "navbar-brand" })
+                    @*<a href="#" id="HomeButton" class="navbar-brand">Xtreme Caffeine</a>*@
+                    </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Menu", "Menu", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>
+                          &nbsp;&nbsp;  <div class="fb-like" style="padding-top: 15px; " data-href="https://www.facebook.com/xtremecaffeine" colorscheme="light" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>                            
+                        </li>
+                    </ul>
+                    @*@Html.Partial("_LoginPartial")*@
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - Darwin * Northern Territory * Australia </p>
+            </footer>
+        </div>
+
+        
+        @*@RenderSection("scripts", required: false)*@
+    </body>
+</html>
+<style type="text/css">
+     
+  /*.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+      height: 600px;
+      width: 900px;
+  }*/
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 600px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    top: 50%;
+}
+/*full width container*/
+
+</style>

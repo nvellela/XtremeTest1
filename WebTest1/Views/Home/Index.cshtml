@@ -1,0 +1,224 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>*@
+@*<div id="wrapper">
+    <img src="image.jpg" alt="" />
+</div>*@
+
+@*<div class="container">
+    <div class="col-sm-9 ">
+        <!-- Carousel
+            ================================================== -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="~/static/img/Carousel1.jpg" />
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example headline.</h1>
+                            <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+
+                    <img src="~/static/img/Carousel2.jpg" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img src="~/static/img/Carousel3.jpg" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div><!-- /.carousel -->
+        <!-- Marketing messaging and featurettes
+            ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+    </div>
+</div>*@
+
+<section class="block" style="padding-top: 10px">
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class=" item">
+                <img src="~/static/img/Carousel10.jpg" alt="Slide1" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <img style="width: 90px;" src="~/static/img/download.png"><h1>@Html.ActionLink("Menu", "Menu", "Home")</h1>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class=" item">
+                <img src="~/static/img/Carousel3.jpg" alt="Slide1" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <img style="width: 90px;" src="~/static/img/download.png"><h1>@Html.ActionLink("Menu", "Menu", "Home")</h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="active item">
+                <img src="~/static/img/Carousel11.jpg" alt="Slide2" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <img style="width: 90px;" src="~/static/img/download.png"><h1>Opening Hours</h1>
+                        <span class="input-lg">Mon - Tues: 06:30 - 15:00</span><br>
+                        <span class="input-lg">Wed - Fri:  06:30 - 15:00</span><br>
+                        <span class="input-lg">Wed - Fri:  18:00 - 21:00 [Dinner]</span><br>
+                        <span class="input-lg">Saturday:   18:00 - 21:00 [Dinner]</span><br>
+                        <p><div class="fb-like fb_iframe_widget" style="padding-top: 15px;" data-share="true" data-show-faces="true" data-action="like" data-layout="button" colorscheme="light" data-href="https://www.facebook.com/xtremecaffeine" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=761462080562204&amp;color_scheme=light&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxtremecaffeine&amp;layout=button&amp;locale=en_GB&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="width: 92px; height: 20px; vertical-align: bottom;"><iframe name="f188c44b69a056c" width="1000" height="1000" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=761462080562204&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FoDB-fAAStWy.js%3Fversion%3D41%23cb%3Df1f4b9175c44391%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%253A64332%252Fffe8bea979f0b5%26relation%3Dparent.parent&amp;color_scheme=light&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxtremecaffeine&amp;layout=button&amp;locale=en_GB&amp;sdk=joey&amp;share=true&amp;show_faces=true" frameborder="0" scrolling="no" style="border: currentColor; border-image: none; width: 92px; height: 20px; visibility: visible;" allowtransparency="true"></iframe></span></div>                            <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="~/static/img/Carousel1.jpg" alt="Slide3" />
+                <div class="container">
+                    <div class="carousel-caption">
+                        <img style="width: 90px;" src="~/static/img/download.png"><h1>Location</h1>
+                        <address>
+                            13 Cavanagh Street<br>
+                            Darwin, Northern Territory 0800<br>
+                            <abbr title="Phone">Phone:</abbr>
+                            (08) 8941 3003
+                        </address>
+                        <p><div class="fb-like fb_iframe_widget" style="padding-top: 15px;" data-share="true" data-show-faces="true" data-action="like" data-layout="button" colorscheme="light" data-href="https://www.facebook.com/xtremecaffeine" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=761462080562204&amp;color_scheme=light&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxtremecaffeine&amp;layout=button&amp;locale=en_GB&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="width: 92px; height: 20px; vertical-align: bottom;"><iframe name="f188c44b69a056c" width="1000" height="1000" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/v2.0/plugins/like.php?action=like&amp;app_id=761462080562204&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter%2FoDB-fAAStWy.js%3Fversion%3D41%23cb%3Df1f4b9175c44391%26domain%3Dlocalhost%26origin%3Dhttp%253A%252F%252Flocalhost%253A64332%252Fffe8bea979f0b5%26relation%3Dparent.parent&amp;color_scheme=light&amp;href=https%3A%2F%2Fwww.facebook.com%2Fxtremecaffeine&amp;layout=button&amp;locale=en_GB&amp;sdk=joey&amp;share=true&amp;show_faces=true" frameborder="0" scrolling="no" style="border: currentColor; border-image: none; width: 92px; height: 20px; visibility: visible;" allowtransparency="true"></iframe></span></div>                            <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+
+    </div>
+</section>
+<div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle" src="~/static/img/fruitsalad.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+
+                <h2>Fruit Salad</h2>
+                <p>Fresh fruit salad served fresh or with home made yoghurt and honey !</p>
+                
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" src="~/static/img/Brownie.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Gluten Free</h2>
+                <p>Hazel nut Brownies - gluten free <br />Our Pistachio chocolate cookies backed with coconut oil - Yes! Yes! Yes! They are gluten free and dairy free</p> 
+               
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="img-circle" src="~/static/img/muffins.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+                <h2>Cookies & Muffins</h2>
+               
+                <p> Apple crumble muffins </p>       
+               
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Darwin's Best Coffee .... <span class="text-muted"></span></h2>
+                <p class="lead">Perfect Morning with nice coffee and  great breakfast with wide range on breakfast menu !</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500" src="~/static/img/shop1.jpg">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" style="width: 340px; height: 340px;" data-src="holder.js/500x500/auto" alt="500x500" src="~/static/img/granola.jpg">
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Granola ... <span class="text-muted">See for yourself.</span></h2>
+                <p class="lead">Cranberry granola getting toasted in the oven with coconut oil, rice malt syrup and maple syrup and will be ready for the breakfast served with homemade yoghurt fresh strawberry and banana with little drizzle of maple syrup on top .........yummy yummy  !</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">**Best Steak Sandwich in Darwin! <span class="text-muted"> </span></h2>
+                <p class="lead">Tasty chicken cheese salad rolls</p>            
+                <p class="lead">Hungry! Try our Tandoori chicken with cheese and salad</p></div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" style="width: 340px; height: 340px;" data-src="holder.js/500x500/auto" alt="500x500" src="~/static/img/checkensandwich.jpg">
+            </div>
+        </div>        
+        <!-- /END THE FEATURETTES -->
+        <!-- FOOTER -->
+      
+
+    </div><!-- /.container -->
+
+    <div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" title="" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" data-original-title="Copy to clipboard">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1403977215066">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com">         <embed src="/assets/flash/ZeroClipboard.swf?noCache=1403977215066" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com%2C%2F%2Fgetbootstrap.com%2Chttp%3A%2F%2Fgetbootstrap.com" scale="exactfit">                </object></div>
+<script type="text/javascript">
+    function initialize() {
+        $('.carousel').carousel({
+            interval: 5000
+        })
+    }
+    $(function () {
+        initialize();
+    });
+
+</script>
